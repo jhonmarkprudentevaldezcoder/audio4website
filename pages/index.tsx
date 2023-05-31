@@ -86,37 +86,6 @@ const Home = () => {
           </aside>
         </section>
 
-        {/* Our Teams */}
-        <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
-          <aside className="text-center sm:w-10/12 lg:text-left lg:w-full">
-            <div className="space-y-12" data-aos="fade-right">
-              <SectionSentence
-                title="We're a team of designers, engineers and analysts"
-                paragraph="Our team consists of many creative people. We are committed to maintaining quality work as well as speed. These creative people work together to create maximum work results."
-                badge="OUR TEAM"
-              />
-              <ButtonLink
-                value="See Our Teams"
-                href="/teams"
-                size="small"
-                color="white"
-                style="light"
-              />
-            </div>
-          </aside>
-          <aside
-            className="w-full h-[400px] relative sm:w-8/12 lg:w-full"
-            data-aos="fade-left"
-          >
-            <Image
-              src={'/images/team-illustration.svg'}
-              layout="fill"
-              objectFit="fill"
-              alt="Code editor and UI Editing popup"
-            />
-          </aside>
-        </section>
-
         <LineDivider />
 
         {/* Testimonial */}
