@@ -11,7 +11,7 @@ const LogoList = () => {
       >
         <div className="">
           <Image
-            src={'/images/github-logo.svg'}
+            src={'/images/brands/Sennheiser-Logo.png'}
             width={120}
             height="36"
             alt="github logo"
@@ -19,7 +19,7 @@ const LogoList = () => {
         </div>
         <div className="">
           <Image
-            src={'/images/forbes-logo.svg'}
+            src={'/images/brands/Epson_logo.png'}
             width={120}
             height="36"
             alt="forbes logo"
