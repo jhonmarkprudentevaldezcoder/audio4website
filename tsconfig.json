@@ -16,6 +16,12 @@
     "incremental": true,
     "baseUrl": "./"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "try.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "try.js",
+    "pages/api/sendEmail.js"
+  ],
   "exclude": ["node_modules"]
 }
