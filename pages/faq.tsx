@@ -39,7 +39,7 @@ const Faq = () => {
         title: `Our Mission / Vision      `,
         description: `We promise to always finish the project on time, if a problem occurs (because of our mistake), all payments will be refunded. And the project will be terminated.`,
       },
-      {
+      /* {
         title: `Does it include servers and domains?`,
         description: `You don't need to think about anything else, we have everything prepared. You just need to check your progress and make sure the features you want are the right one.`,
       },
@@ -50,7 +50,7 @@ const Faq = () => {
       {
         title: `Is there a warranty?`,
         description: `1 year warranty for our errors or mistakes. If you want to add a feature that is not included in the warranty, there is another fee per feature, and the price depends on the difficulty.`,
-      },
+      }, */
     ];
     setRandomFaqs([
       faqs,
@@ -85,19 +85,7 @@ const Faq = () => {
               {
                 name: 'Customers',
                 onClick: () => {
-                  setActiveFaq(randomFaqs[1]);
-                },
-              },
-              {
-                name: 'Maintenance',
-                onClick: () => {
-                  setActiveFaq(randomFaqs[2]);
-                },
-              },
-              {
-                name: 'Technology',
-                onClick: () => {
-                  setActiveFaq(randomFaqs[3]);
+                  setActiveFaq(randomFaqs[0]);
                 },
               },
             ]}
