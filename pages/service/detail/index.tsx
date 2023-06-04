@@ -1,13 +1,13 @@
-import LineDivider from 'components/atoms/LineDivider'
-import Text from 'components/atoms/Text'
+import LineDivider from 'components/atoms/LineDivider';
+import Text from 'components/atoms/Text';
 import FeatureCard, {
   FeatureCardProps,
-} from 'components/molecules/Card/FeatureCard'
-import PageSentence from 'components/molecules/PageSentence'
-import PageTemplate from 'components/templates/PageTemplate'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+} from 'components/molecules/Card/FeatureCard';
+import PageSentence from 'components/molecules/PageSentence';
+import PageTemplate from 'components/templates/PageTemplate';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 import {
   FiClock,
   FiCode,
@@ -15,13 +15,13 @@ import {
   FiLayout,
   FiTrendingUp,
   FiZap,
-} from 'react-icons/fi'
-import randomString from 'utils/randomString'
+} from 'react-icons/fi';
+import randomString from 'utils/randomString';
 
 const ServiceDetail = () => {
   interface Faq {
-    title: string
-    description: string
+    title: string;
+    description: string;
   }
   const faqs: Faq[] = [
     {
@@ -48,7 +48,7 @@ const ServiceDetail = () => {
       title: `Is there a warranty?`,
       description: `1 year warranty for our errors or mistakes. If you want to add a feature that is not included in the warranty, there is another fee per feature, and the price depends on the difficulty.`,
     },
-  ]
+  ];
   const features: FeatureCardProps[] = [
     {
       title: 'Design Files',
@@ -83,11 +83,14 @@ const ServiceDetail = () => {
         'A high speed website will not disappoint prospective customers.',
       icon: <FiZap />,
     },
-  ]
+  ];
   return (
-    <PageTemplate title="Service Detail - Collosal">
+    <PageTemplate title="Service Detail - AUDIO4">
       <section className="grid place-items-center">
-        <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 text-center" data-aos="zoom-in-up">
+        <div
+          className="sm:w-10/12 md:w-8/12 lg:w-6/12 text-center"
+          data-aos="zoom-in-up"
+        >
           <PageSentence
             badge="DEVELOPMENT"
             title="Solve your company's repetitive problems by designing apps"
@@ -96,7 +99,10 @@ const ServiceDetail = () => {
       </section>
       <LineDivider />
       <section className="grid grid-cols-1 place-items-center gap-8 lg:grid-cols-2 lg:gap-5 ">
-        <aside className="w-full sm:w-10/12 md:w-8/12 lg:w-full" data-aos="fade-up-right">
+        <aside
+          className="w-full sm:w-10/12 md:w-8/12 lg:w-full"
+          data-aos="fade-up-right"
+        >
           <figure className="w-full h-[450px] relative">
             <Image
               src={'/images/development-illustration.svg'}
@@ -106,7 +112,10 @@ const ServiceDetail = () => {
             />
           </figure>
         </aside>
-        <aside className="grid gap-12 place-items-center" data-aos="fade-up-left">
+        <aside
+          className="grid gap-12 place-items-center"
+          data-aos="fade-up-left"
+        >
           <div className="sm:w-10/12 md:w-8/12 lg:w-full lg:text-left grid gap-10">
             <div className="grid gap-8">
               <Text
@@ -125,7 +134,10 @@ const ServiceDetail = () => {
         </aside>
       </section>
       <section className="grid place-items-center gap-16">
-        <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 text-center" data-aos="zoom-in-up">
+        <div
+          className="sm:w-10/12 md:w-8/12 lg:w-6/12 text-center"
+          data-aos="zoom-in-up"
+        >
           <PageSentence
             badge=" FEATURES"
             title="Here's what you will get when purchasing this service"
@@ -142,12 +154,15 @@ const ServiceDetail = () => {
                   isNaked={true}
                 />
               </div>
-            )
+            );
           })}
         </div>
       </section>
       <section className="grid place-items-center gap-16">
-        <div className="sm:w-10/12 md:w-8/12 lg:w-6/12 text-center" data-aos="zoom-in-up">
+        <div
+          className="sm:w-10/12 md:w-8/12 lg:w-6/12 text-center"
+          data-aos="zoom-in-up"
+        >
           <PageSentence
             badge="FAQ"
             title="Frequently asked questions, maybe the same as yours"
@@ -156,11 +171,15 @@ const ServiceDetail = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-x-7">
           {faqs.map((faq) => {
             return (
-              <div className="grid gap-2.5" key={randomString(64)} data-aos="fade-right">
+              <div
+                className="grid gap-2.5"
+                key={randomString(64)}
+                data-aos="fade-right"
+              >
                 <Text textStyle="FAQTitle" value={faq.title} />
                 <Text textStyle="FAQDescription" value={faq.description} />
               </div>
-            )
+            );
           })}
         </div>
         <div className="text-white text-base font-medium">
@@ -172,7 +191,7 @@ const ServiceDetail = () => {
         </div>
       </section>
     </PageTemplate>
-  )
-}
+  );
+};
 
-export default ServiceDetail
+export default ServiceDetail;

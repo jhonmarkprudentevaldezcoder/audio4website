@@ -1,16 +1,16 @@
-import NavBar from 'components/organisms/NavBar'
-import CallOut from 'components/organisms/CallOut'
-import Footer from 'components/organisms/Footer'
-import React, { ReactNode, useEffect } from 'react'
-import Container from 'components/templates/Container'
-import Head from 'next/head'
-import useGetBrowserName from 'hooks/useGetBrowserName'
+import NavBar from 'components/organisms/NavBar';
+import CallOut from 'components/organisms/CallOut';
+import Footer from 'components/organisms/Footer';
+import React, { ReactNode, useEffect } from 'react';
+import Container from 'components/templates/Container';
+import Head from 'next/head';
+import useGetBrowserName from 'hooks/useGetBrowserName';
 interface PageTemplateProps {
-  children: ReactNode[] | JSX.Element
-  title?: string
+  children: ReactNode[] | JSX.Element;
+  title?: string;
 }
-const PageTemplate = ({ children, title = 'Collosal' }: PageTemplateProps) => {
-  const browserName = useGetBrowserName()
+const PageTemplate = ({ children, title = 'AUDIO 4' }: PageTemplateProps) => {
+  const browserName = useGetBrowserName();
   return (
     <>
       <Head>
@@ -63,7 +63,7 @@ const PageTemplate = ({ children, title = 'Collosal' }: PageTemplateProps) => {
         </>
       )}
     </>
-  )
-}
+  );
+};
 
-export default PageTemplate
+export default PageTemplate;

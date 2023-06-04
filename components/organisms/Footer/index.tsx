@@ -15,10 +15,7 @@ const Footer = () => {
                 value={`Copyright © ${new Date().getFullYear()}`}
                 textStyle="SectionParagraph"
               />
-              <Text
-                value={`Design Sophia Adelante (pips) `}
-                textStyle="SectionParagraph"
-              />
+              <Text value={`Design (pips) `} textStyle="SectionParagraph" />
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:gap-16 xl:gap-20">
