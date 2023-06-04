@@ -4,11 +4,57 @@ import TextAreaGroup from 'components/molecules/FormGroup/TextAreaGroup';
 import IconListItem from 'components/molecules/IconListItem';
 import PageSentence from 'components/molecules/PageSentence';
 import PageTemplate from 'components/templates/PageTemplate';
-import React from 'react';
 import { FiMail, FiPhoneCall } from 'react-icons/fi';
 import { MdLocationCity } from 'react-icons/md';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 
-const Contact = () => {
+interface EmailData {
+  to: string;
+  subject: string;
+  text: string;
+}
+
+const Contact: React.FC = () => {
+  const [emailData, setEmailData] = useState<EmailData>({
+    to: '',
+    subject: '',
+    text: '',
+  });
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(emailData),
+      });
+
+      if (response.ok) {
+        console.log('Email sent successfully.');
+        setEmailData({
+          to: '',
+          subject: '',
+          text: '',
+        });
+      } else {
+        console.log('Failed to send email.');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+    }
+  };
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setEmailData({
+      ...emailData,
+      [e.target.name]: e.target.value,
+    });
+  };
   return (
     <>
       <PageTemplate title="Contact - AUDIO 4">

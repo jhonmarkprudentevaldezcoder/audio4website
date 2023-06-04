@@ -27,68 +27,115 @@ const LogoList = () => {
         </div>
         <div className="">
           <Image
-            src={'/images/google-logo.svg'}
+            src={'/images/brands/Sennheiser-Logo.png'}
             width={120}
             height="36"
-            alt="google logo"
+            alt="github logo"
           />
         </div>
         <div className="">
           <Image
-            src={'/images/microsoft-logo.svg'}
+            src={'/images/brands/Epson_logo.png'}
             width={120}
             height="36"
-            alt="microsoft logo"
+            alt="forbes logo"
           />
         </div>
         <div className="">
           <Image
-            src={'/images/facebook-logo.svg'}
+            src={'/images/brands/Sennheiser-Logo.png'}
             width={120}
             height="36"
-            alt="facebook logo"
+            alt="github logo"
+          />
+        </div>
+        <div className="">
+          <Image
+            src={'/images/brands/Epson_logo.png'}
+            width={120}
+            height="36"
+            alt="forbes logo"
+          />
+        </div>{' '}
+        <div className="">
+          <Image
+            src={'/images/brands/Sennheiser-Logo.png'}
+            width={120}
+            height="36"
+            alt="github logo"
+          />
+        </div>
+        <div className="">
+          <Image
+            src={'/images/brands/Epson_logo.png'}
+            width={120}
+            height="36"
+            alt="forbes logo"
           />
         </div>
         <LineDivider />
-        <br />
         <div className="">
           <Image
-            src={'/images/facebook-logo.svg'}
+            src={'/images/brands/Sennheiser-Logo.png'}
             width={120}
             height="36"
-            alt="facebook logo"
+            alt="github logo"
           />
         </div>
         <div className="">
           <Image
-            src={'/images/facebook-logo.svg'}
+            src={'/images/brands/Epson_logo.png'}
             width={120}
             height="36"
-            alt="facebook logo"
+            alt="forbes logo"
           />
         </div>
         <div className="">
           <Image
-            src={'/images/facebook-logo.svg'}
+            src={'/images/brands/Sennheiser-Logo.png'}
             width={120}
             height="36"
-            alt="facebook logo"
+            alt="github logo"
           />
         </div>
         <div className="">
           <Image
-            src={'/images/facebook-logo.svg'}
+            src={'/images/brands/Epson_logo.png'}
             width={120}
             height="36"
-            alt="facebook logo"
+            alt="forbes logo"
           />
         </div>
         <div className="">
           <Image
-            src={'/images/facebook-logo.svg'}
+            src={'/images/brands/Sennheiser-Logo.png'}
             width={120}
             height="36"
-            alt="facebook logo"
+            alt="github logo"
+          />
+        </div>
+        <div className="">
+          <Image
+            src={'/images/brands/Epson_logo.png'}
+            width={120}
+            height="36"
+            alt="forbes logo"
+          />
+        </div>
+        <div className="">
+          <Image
+            src={'/images/brands/Sennheiser-Logo.png'}
+            width={120}
+            height="36"
+            alt="github logo"
+          />
+        </div>
+        <div className="">
+          <Image
+            src={'/images/brands/Epson_logo.png'}
+            width={120}
+            height="36"
+            alt="forbes logo"
           />
         </div>
       </section>

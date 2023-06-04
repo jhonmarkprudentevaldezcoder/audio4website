@@ -1,15 +1,15 @@
-import LineDivider from 'components/atoms/LineDivider'
-import Text from 'components/atoms/Text'
-import PageSentence from 'components/molecules/PageSentence'
-import PageTemplate from 'components/templates/PageTemplate'
-import React from 'react'
+import LineDivider from 'components/atoms/LineDivider';
+import Text from 'components/atoms/Text';
+import PageSentence from 'components/molecules/PageSentence';
+import PageTemplate from 'components/templates/PageTemplate';
+import React from 'react';
 
 const TermOfService = () => {
   return (
     <PageTemplate>
       <section className="space-y-6 text-center" data-aos="zoom-in-up">
         <PageSentence badge="PAGE" title={`Terms & Conditions`} />
-        <Text textStyle="BlogMeta" value="Updated at 2021-05-06" />
+        <Text textStyle="BlogMeta" value="Updated at 06-04-2023" />
       </section>
       <LineDivider />
       <section className="grid place-items-center" data-aos="fade-up">
@@ -17,11 +17,11 @@ const TermOfService = () => {
           <Text
             textStyle="PageContent"
             value={`
-              By accessing and placing an order with Collosal, you confirm that you are in agreement with and bound by the terms of service contained in the Terms & Conditions outlined below. These terms apply to the entire website and any email or other type of communication between you and Collosal.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Tellus in hac habitasse platea dictumst. Donec ultrices tincidunt arcu non sodales. Morbi tincidunt augue interdum velit euismod in pellentesque. Integer malesuada nunc vel risus commodo viverra maecenas. Quis lectus nulla at volutpat diam ut venenatis tellus. Ut sem viverra aliquet eget. Nisl tincidunt eget nullam non nisi. Vitae sapien pellentesque habitant morbi tristique senectus et. Hendrerit dolor magna eget est lorem ipsum dolor sit. Ac placerat vestibulum lectus mauris. Vulputate dignissim suspendisse in est ante in nibh mauris. Eget nullam non nisi est sit amet facilisis. Diam ut venenatis tellus in metus vulputate eu scelerisque. Ultricies tristique nulla aliquet enim tortor.
               <br> <br>
-              Under no circumstances shall Collosal team be liable for any direct, indirect, special, incidental or consequential damages, including, but not limited to, loss of data or profit, arising out of the use, or the inability to use, the materials on this site, even if Collosal team or an authorized representative has been advised of the possibility of such damages. If your use of materials from this site results in the need for servicing, repair or correction of equipment or data, you assume any costs thereof.
+              Dictumst vestibulum rhoncus est pellentesque elit. Nisi lacus sed viverra tellus. Amet mauris commodo quis imperdiet massa tincidunt. Tristique senectus et netus et malesuada fames ac turpis. Nisi porta lorem mollis aliquam ut porttitor leo. Lorem donec massa sapien faucibus et molestie ac. Gravida arcu ac tortor dignissim. Morbi tristique senectus et netus et malesuada fames. Quis vel eros donec ac odio tempor orci. Et netus et malesuada fames ac. Diam sollicitudin tempor id eu nisl nunc mi ipsum. Nisl nisi scelerisque eu ultrices vitae auctor eu. Aliquet bibendum enim facilisis gravida neque convallis a.
               <br> <br>
-              Collosal will not be responsible for any outcome that may occur during the course of usage of our resources. We reserve the rights to change prices and revise the resources usage policy in any moment.
+              Tincidunt lobortis feugiat vivamus at augue eget arcu. Enim sit amet venenatis urna cursus eget nunc. Gravida neque convallis a cras semper auctor neque vitae. Nunc pulvinar sapien et ligula ullamcorper malesuada. Vel eros donec ac odio tempor orci dapibus ultrices.
               `}
           />
           <div className="space-y-2.5">
@@ -29,16 +29,16 @@ const TermOfService = () => {
             <Text
               textStyle="PageContent"
               value={`
-              Collosal grants you a revocable, non-exclusive, non- transferable, limited license to download, install and use the website strictly in accordance with the terms of this Agreement.
+              Facilisis leo vel fringilla est ullamcorper eget nulla. Quam nulla porttitor massa id neque aliquam. Suspendisse sed nisi lacus sed viverra tellus in hac habitasse. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Non enim praesent elementum facilisis leo vel fringilla est ullamcorper.
               <br> <br>
-              These Terms & Conditions are a contract between you and Collosal ("we," "our," or "us") grants you a revocable, non-exclusive, non- transferable, limited license to download, install and use the website strictly in accordance with the terms of this Agreement.
+              Facilisi morbi tempus iaculis urna. Turpis massa sed elementum tempus egestas sed sed risus pretium. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. In fermentum posuere urna nec tincidunt praesent semper feugiat. Phasellus faucibus scelerisque eleifend donec pretium vulputate. Neque laoreet suspendisse interdum consectetur. Blandit aliquam etiam erat velit scelerisque. Sodales ut etiam sit amet nisl. Lacus vestibulum sed arcu non.
               `}
             />
           </div>
         </div>
       </section>
     </PageTemplate>
-  )
-}
+  );
+};
 
-export default TermOfService
+export default TermOfService;

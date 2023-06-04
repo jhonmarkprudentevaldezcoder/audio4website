@@ -5,8 +5,8 @@ import PageSentence from 'components/molecules/PageSentence'; /*
 import PricingCard from 'components/molecules/Card/PricingCard';
 import ProjectCard from 'components/molecules/Card/ProjectCard'; */
 import SectionSentence from 'components/molecules/SectionSentence';
-import LogoList from 'components/organisms/LogoList';
-import TestimonialList from 'components/organisms/TestimonialList';
+import LogoList from 'components/organisms/LogoList'; /* 
+import TestimonialList from 'components/organisms/TestimonialList'; */
 import PageTemplate from 'components/templates/PageTemplate';
 import Image from 'next/image';
 import React from 'react';
@@ -85,9 +85,7 @@ const Home = () => {
             />
           </aside>
         </section>
-
         <LineDivider />
-
         {/* Testimonial */}
       </PageTemplate>
     </>
