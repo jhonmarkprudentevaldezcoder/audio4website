@@ -42,23 +42,23 @@ const Home = () => {
         <section className="grid grid-cols-1 gap-5 md:grid-cols-3 mb-16">
           <div data-aos="fade-up">
             <FeatureCard
-              title="Design"
-              description="The project interface will be designed first, our favorite tool is Figma."
+              title="Planing"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               icon={<FiFigma />}
             />
           </div>
           <div data-aos="fade-up">
             <FeatureCard
               title="Develop"
-              description="Transform design and write business logic here. Choose the technology you want."
-              icon={<FiCode />}
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              icon={<FiBox />}
             />
           </div>
           <div data-aos="fade-up">
             <FeatureCard
               title="Ship"
-              description="After the work is complete, we will send the project and all its assets to you."
-              icon={<FiBox />}
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              icon={<FiFigma />}
             />
           </div>
         </section>
