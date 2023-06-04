@@ -14,12 +14,12 @@ const ProjectDetail = () => {
   }
   const projectList: Project[] = [
     {
-      title: 'Simple Mobile Blog App',
-      description: 'A blog app on mobile platform',
+      title: 'Simple Products',
+      description: 'A Products description',
     },
     {
-      title: 'Realtime Chat App UI Design',
-      description: 'A UI design for realtime chat app',
+      title: 'Realtime Simple Products',
+      description: 'A Products description',
     },
   ];
   return (
@@ -28,7 +28,7 @@ const ProjectDetail = () => {
         <div className="text-center sm:w-10/12 md:w-8/12 lg:w-6/12">
           <PageSentence
             badge="PROJECT DETAIL"
-            title="The Desktop App Landing Page"
+            title="The Products Landing Page"
           />
         </div>
       </section>
@@ -43,21 +43,21 @@ const ProjectDetail = () => {
         >
           <Text
             textStyle="SectionParagraph"
-            value="Something has always existed. According to physics, there can never be true physical nothingness—though there can be times when existence resembles nothing."
+            value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ."
           />
           <div className="grid gap-6">
             <div className="grid gap-2">
               <Text value="CATEGORY" textStyle="ProjectDetailLabel" />
-              <Text value="Development" textStyle="ProjectDetailValue" />
+              <Text value="PRODUCT CATEGORY" textStyle="ProjectDetailValue" />
             </div>
-            <div className="grid gap-2">
+            {/*     <div className="grid gap-2">
               <Text value="CLIENT" textStyle="ProjectDetailLabel" />
               <Text value="Acme, Inc" textStyle="ProjectDetailValue" />
-            </div>
+            </div> */}
             <div className="grid gap-2">
-              <Text value="TECHNOLOGY" textStyle="ProjectDetailLabel" />
+              <Text value="DESCRIPTION" textStyle="ProjectDetailLabel" />
               <Text
-                value="JavaScript, HTML, CSS"
+                value="PRODUCT DESCRIPTION"
                 textStyle="ProjectDetailValue"
               />
             </div>
@@ -72,7 +72,7 @@ const ProjectDetail = () => {
         >
           <PageSentence
             badge="PROJECT DETAIL"
-            title="The Desktop App Landing Page"
+            title="The Product Landing Page"
           />
         </div>
         <div className="w-full grid grid-cols-1 gap-y-16 sm:grid-cols-2 sm:gap-x-5">

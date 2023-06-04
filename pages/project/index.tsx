@@ -14,20 +14,20 @@ const Project = () => {
   }
   const projectList: Project[] = [
     {
-      title: 'The Mobile App Landing Page',
-      description: 'A landing page for mobile app',
+      title: 'Products Landing Page',
+      description: 'A landing page for Products',
     },
     {
-      title: 'The Desktop App Landing Page',
-      description: 'A landing page for desktop app',
+      title: 'Products Landing Page',
+      description: 'A landing page for Products',
     },
     {
-      title: 'Simple Mobile Blog App',
-      description: 'A blog app on mobile platform',
+      title: 'Simple Products',
+      description: 'A Products description',
     },
     {
-      title: 'Realtime Chat App UI Design',
-      description: 'A UI design for realtime chat app',
+      title: 'Products name',
+      description: 'A Products description',
     },
   ];
   return (
