@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:gap-16 xl:gap-20">
-            <div className="space-y-5">
+            {/*  <div className="space-y-5">
               <Text value="SERVICES" textStyle="FooterLinkGroupTitle" />
               <div className="space-y-[10px]">
                 <NavLink value="VALORANT" href="/service/detail" />
@@ -32,7 +32,7 @@ const Footer = () => {
                 <NavLink value="VALORANT" href="/service/detail" />
                 <NavLink value="VALORANT" href="/pricing" />
               </div>
-            </div>
+            </div> */}
             <div className="space-y-5">
               <Text value="COMPANY" textStyle="FooterLinkGroupTitle" />
               <div className="space-y-[10px]">
