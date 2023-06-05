@@ -9,15 +9,18 @@ import randomString from 'utils/randomString';
 
 const ProjectDetail = () => {
   interface Project {
+    category: string;
     title: string;
     description: string;
   }
   const projectList: Project[] = [
     {
+      category: 'Fog-Machines',
       title: 'Simple Products',
       description: 'A Products description',
     },
     {
+      category: 'Lighting-Systems',
       title: 'Realtime Simple Products',
       description: 'A Products description',
     },

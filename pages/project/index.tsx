@@ -4,32 +4,46 @@ import LineDivider from 'components/atoms/LineDivider';
 import PageSentence from 'components/molecules/PageSentence';
 import ProjectCard from 'components/molecules/Card/ProjectCard';
 import PageTemplate from 'components/templates/PageTemplate';
-import React from 'react';
+import React, { useState, ChangeEvent } from 'react';
+
 import randomString from 'utils/randomString';
 
 const Project = () => {
   interface Project {
+    category: string;
     title: string;
     description: string;
   }
   const projectList: Project[] = [
     {
-      title: 'Products Landing Page',
+      category: 'Fog-Machines',
+      title: 'Fog-Machine Products Landing Page',
       description: 'A landing page for Products',
     },
     {
-      title: 'Products Landing Page',
+      category: 'Lighting-Systems',
+      title: 'Lighting-Systems Products  Landing Page',
       description: 'A landing page for Products',
     },
     {
-      title: 'Simple Products',
+      category: 'Fog-Machines',
+      title: ' Fog-Machine Simple Products',
       description: 'A Products description',
     },
     {
-      title: 'Products name',
+      category: 'Lighting-Systems',
+      title: ' Lighting-Systems Products name',
       description: 'A Products description',
     },
   ];
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const filteredProducts: Project[] = selectedCategory
+    ? projectList.filter((product) => product.category === selectedCategory)
+    : projectList;
+
+  const handleCategoryChange = (event: ChangeEvent<HTMLSelectElement>) => {
+    setSelectedCategory(event.target.value);
+  };
   return (
     <PageTemplate title="Project - AUDIO 4">
       <section className="flex flex-col items-center gap-5 md:flex-row md:justify-between">
@@ -46,6 +60,7 @@ const Project = () => {
         </aside>
         <aside className="w-full min-w-[375px] md:w-fit  " data-aos="fade-left">
           <Select
+            onChange={handleCategoryChange}
             options={[
               { label: 'Conference Systems', value: 'Conference-Systems' },
               { label: 'Specialize Speakers', value: 'Specialize-Speakers' },
@@ -100,7 +115,7 @@ const Project = () => {
       <LineDivider />
       <section className="grid place-items-center gap-16">
         <div className="w-full grid grid-cols-1 gap-y-16 mt-64 sm:grid-cols-2 sm:gap-x-5">
-          {projectList.map((project) => {
+          {filteredProducts.map((project) => {
             return (
               <div
                 className="basis-full lg:basis-1/2"
