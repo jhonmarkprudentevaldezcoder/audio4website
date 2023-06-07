@@ -35,6 +35,38 @@ const Project = () => {
       title: ' Lighting-Systems Products name',
       description: 'A Products description',
     },
+
+    //Professional-Sound-Systems
+    {
+      category: 'Professional-Sound-Systems',
+      title: 'Amplifiers',
+      description: 'A Products description',
+    },
+    {
+      category: 'Professional-Sound-Systems',
+      title: 'Wireless System',
+      description: 'A Products description',
+    },
+    {
+      category: 'Professional-Sound-Systems',
+      title: 'Wireless Podium / Lecturn',
+      description: 'A Products description',
+    },
+    {
+      category: 'Professional-Sound-Systems',
+      title: 'Portable P.A. System',
+      description: 'A Products description',
+    },
+    {
+      category: 'Professional-Sound-Systems',
+      title: 'Mixers',
+      description: 'A Products description',
+    },
+    {
+      category: 'Professional-Sound-Systems',
+      title: 'CD Player',
+      description: 'A Products description',
+    },
   ];
   const [selectedCategory, setSelectedCategory] = useState<string>('');
   const filteredProducts: Project[] = selectedCategory
