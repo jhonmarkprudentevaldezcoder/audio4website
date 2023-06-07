@@ -5,11 +5,10 @@ import PageSentence from 'components/molecules/PageSentence';
 import ProjectCard from 'components/molecules/Card/ProjectCard';
 import PageTemplate from 'components/templates/PageTemplate';
 import React, { useState, ChangeEvent } from 'react';
-import Image from 'next/image';
 
 import randomString from 'utils/randomString';
 
-const Project = () => {
+const Project: React.FC = () => {
   interface Project {
     category: string;
     title: string;

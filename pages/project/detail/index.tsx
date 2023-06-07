@@ -2,10 +2,8 @@ import LazyCard from 'components/atoms/LazyCard';
 import LineDivider from 'components/atoms/LineDivider';
 import Text from 'components/atoms/Text';
 import PageSentence from 'components/molecules/PageSentence';
-import ProjectCard from 'components/molecules/Card/ProjectCard';
 import PageTemplate from 'components/templates/PageTemplate';
 import React from 'react';
-import randomString from 'utils/randomString';
 
 const ProjectDetail = () => {
   return (
