@@ -5,6 +5,7 @@ import PageSentence from 'components/molecules/PageSentence';
 import ProjectCard from 'components/molecules/Card/ProjectCard';
 import PageTemplate from 'components/templates/PageTemplate';
 import React, { useState, ChangeEvent } from 'react';
+import Image from 'next/image';
 
 import randomString from 'utils/randomString';
 
@@ -13,32 +14,115 @@ const Project = () => {
     category: string;
     title: string;
     description: string;
+    image: string;
   }
   const projectList: Project[] = [
+    //Conference Systems
     {
-      category: 'Fog-Machines',
-      title: 'Fog-Machine Products Landing Page',
+      category: 'Conference-Systems',
+      title: 'Conference Systems',
       description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
+    },
+    //Equipment Racks/Cases
+    {
+      category: 'Equipment-Racks-Cases',
+      title: 'Equipment Racks/Cases',
+      description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
+    },
+    //Radio Systems
+    {
+      category: 'Radio-Systems',
+      title: 'Radio Systems',
+      description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
+    },
+    //Video Projection system
+    {
+      category: 'Video-Projection-Systems',
+      title: 'Video Projection system',
+      description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
+    },
+    //Telephone & PABX Systems
+    {
+      category: 'Telephone-PABX-Systems',
+      title: 'Telephone & PABX Systems',
+      description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
+    },
+    //Surveillance Cameras
+    {
+      category: 'Surveillance-Cameras',
+      title: 'Surveillance Cameras',
+      description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
+    },
+    //Speech Laboratory Systems
+    {
+      category: 'Speech-Laboratory',
+      title: 'Speech Laboratory Systems',
+      description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
+    },
+
+    //Intercom-Systems
+    {
+      category: 'Intercom-Systems',
+      title: 'Intercom Systems',
+      description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
+    },
+
+    //Paging Power Amplifiers
+    {
+      category: 'Paging-Power-Amplifiers',
+      title: 'Paging Power Amplifiers',
+      description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
+    },
+
+    //Specialize Speakers
+    {
+      category: 'Specialize-Speakers',
+      title: 'Weatherproof Speakers',
+      description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
+    },
+    {
+      category: 'Specialize-Speakers',
+      title: 'Ceiling Speakers',
+      description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
+    },
+
+    //Lighting-Systems
+    {
+      category: 'Lighting-Systems',
+      title: 'Lights',
+      description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
     },
     {
       category: 'Lighting-Systems',
-      title: 'Lighting-Systems Products  Landing Page',
+      title: 'Light Controllers',
       description: 'A landing page for Products',
+      image: '/images/projects/fogmachine.jpg',
     },
+
+    //Fog Machine
     {
       category: 'Fog-Machines',
-      title: ' Fog-Machine Simple Products',
+      title: ' Fog Machine Simple Products',
       description: 'A Products description',
-    },
-    {
-      category: 'Lighting-Systems',
-      title: ' Lighting-Systems Products name',
-      description: 'A Products description',
+      image: '/images/projects/fogmachine.jpg',
     },
 
     //Professional-Sound-Systems
     {
       category: 'Professional-Sound-Systems',
+      image: '/images/projects/fogmachine.jpg',
       title: 'Amplifiers',
       description: 'A Products description',
     },
@@ -46,26 +130,31 @@ const Project = () => {
       category: 'Professional-Sound-Systems',
       title: 'Wireless System',
       description: 'A Products description',
+      image: '/images/projects/fogmachine.jpg',
     },
     {
       category: 'Professional-Sound-Systems',
       title: 'Wireless Podium / Lecturn',
       description: 'A Products description',
+      image: '/images/projects/fogmachine.jpg',
     },
     {
       category: 'Professional-Sound-Systems',
       title: 'Portable P.A. System',
       description: 'A Products description',
+      image: '/images/projects/fogmachine.jpg',
     },
     {
       category: 'Professional-Sound-Systems',
       title: 'Mixers',
       description: 'A Products description',
+      image: '/images/projects/fogmachine.jpg',
     },
     {
       category: 'Professional-Sound-Systems',
       title: 'CD Player',
       description: 'A Products description',
+      image: '/images/projects/fogmachine.jpg',
     },
   ];
   const [selectedCategory, setSelectedCategory] = useState<string>('');
@@ -138,7 +227,7 @@ const Project = () => {
               },
               {
                 label: 'Equipment Racks/Cases',
-                value: 'Equipment-Racks/Cases',
+                value: 'Equipment-Racks-Cases',
               },
             ]}
           />
@@ -157,6 +246,7 @@ const Project = () => {
                 <ProjectCard
                   title={project.title}
                   description={project.description}
+                  image={project.image}
                 />
               </div>
             );

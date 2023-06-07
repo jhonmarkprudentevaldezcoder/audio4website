@@ -12,17 +12,20 @@ const ProjectDetail = () => {
     category: string;
     title: string;
     description: string;
+    image: string;
   }
   const projectList: Project[] = [
     {
       category: 'Fog-Machines',
       title: 'Simple Products',
       description: 'A Products description',
+      image: '/images/conference-systems.jpg',
     },
     {
       category: 'Lighting-Systems',
       title: 'Realtime Simple Products',
       description: 'A Products description',
+      image: '/images/conference-systems.jpg',
     },
   ];
   return (
@@ -89,6 +92,7 @@ const ProjectDetail = () => {
                 <ProjectCard
                   title={project.title}
                   description={project.description}
+                  image={project.image}
                 />
               </div>
             );
