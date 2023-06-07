@@ -8,26 +8,6 @@ import React from 'react';
 import randomString from 'utils/randomString';
 
 const ProjectDetail = () => {
-  interface Project {
-    category: string;
-    title: string;
-    description: string;
-    image: string;
-  }
-  const projectList: Project[] = [
-    {
-      category: 'Fog-Machines',
-      title: 'Simple Products',
-      description: 'A Products description',
-      image: '/images/conference-systems.jpg',
-    },
-    {
-      category: 'Lighting-Systems',
-      title: 'Realtime Simple Products',
-      description: 'A Products description',
-      image: '/images/conference-systems.jpg',
-    },
-  ];
   return (
     <PageTemplate title="Project Detail - AUDIO 4">
       <section className="grid place-items-center" data-aos="zoom-in-up">
@@ -80,23 +60,6 @@ const ProjectDetail = () => {
             badge="PROJECT DETAIL"
             title="The Product Landing Page"
           />
-        </div>
-        <div className="w-full grid grid-cols-1 gap-y-16 sm:grid-cols-2 sm:gap-x-5">
-          {projectList.map((project) => {
-            return (
-              <div
-                className="basis-full lg:basis-1/2"
-                key={randomString(64)}
-                data-aos="zoom-in-up"
-              >
-                <ProjectCard
-                  title={project.title}
-                  description={project.description}
-                  image={project.image}
-                />
-              </div>
-            );
-          })}
         </div>
       </section>
     </PageTemplate>
