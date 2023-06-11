@@ -202,7 +202,7 @@ const Project: React.FC = () => {
             onChange={handleCategoryChange}
             options={[
               { label: 'Conference Systems', value: 'Conference-Systems' },
-              { label: 'Specialize Speakers', value: 'Specialize-Speakers' },
+              { label: 'Specialized Speakers', value: 'Specialized-Speakers' },
               {
                 label: 'Paging Power Amplifiers',
                 value: 'Paging-Power-Amplifiers',
