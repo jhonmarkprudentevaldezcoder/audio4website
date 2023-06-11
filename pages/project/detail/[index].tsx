@@ -217,9 +217,9 @@ const ProjectDetail = () => {
               </div>
 
               <div className="grid gap-2">
-                <Text value="DESCRIPTION" textStyle="ProjectDetailLabel" />
+                <Text value="PROJECT NAME" textStyle="ProjectDetailLabel" />
                 <Text
-                  value={`${product.description}`}
+                  value={`${product.title}`}
                   textStyle="ProjectDetailValue"
                 />
               </div>
