@@ -84,8 +84,8 @@ const Project: React.FC = () => {
 
     //Paging Power Amplifiers
     { num:'9',
-      category: 'Paging-Power-Amplifiers',
-      title: 'Paging Power Amplifiers',
+      category: 'Paging-System-Amplifiers',
+      title: 'Paging System Amplifiers',
       description: 'A landing page for Products',
       image: '/images/projects/Amplifiers.jpg',
     },
@@ -204,8 +204,8 @@ const Project: React.FC = () => {
               { label: 'Conference Systems', value: 'Conference-Systems' },
               { label: 'Specialized Speakers', value: 'Specialized-Speakers' },
               {
-                label: 'Paging Power Amplifiers',
-                value: 'Paging-Power-Amplifiers',
+                label: 'Paging System Amplifiers',
+                value: 'Paging-System-Amplifiers',
               },
               {
                 label: 'Professional Sound Systems',
