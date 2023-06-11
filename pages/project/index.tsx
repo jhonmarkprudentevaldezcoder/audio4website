@@ -21,49 +21,49 @@ const Project: React.FC = () => {
       category: 'Conference-Systems',
       title: 'Conference Systems',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/conference.jpg',
     },
     //Equipment Racks/Cases
     {
       category: 'Equipment-Racks-Cases',
       title: 'Equipment Racks/Cases',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/Cases.jpeg',
     },
     //Radio Systems
     {
       category: 'Radio-Systems',
       title: 'Radio Systems',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/RadioSystem.jfif',
     },
     //Video Projection system
     {
       category: 'Video-Projection-Systems',
       title: 'Video Projection system',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/Projection.jfif',
     },
     //Telephone & PABX Systems
     {
       category: 'Telephone-PABX-Systems',
       title: 'Telephone & PABX Systems',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/Telephone.jpg',
     },
     //Surveillance Cameras
     {
       category: 'Surveillance-Cameras',
       title: 'Surveillance Cameras',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/Surveillance.jpg',
     },
     //Speech Laboratory Systems
     {
       category: 'Speech-Laboratory',
       title: 'Speech Laboratory Systems',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/Laboratory.jpg',
     },
 
     //Intercom-Systems
@@ -71,7 +71,7 @@ const Project: React.FC = () => {
       category: 'Intercom-Systems',
       title: 'Intercom Systems',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/Intercom.jpg',
     },
 
     //Paging Power Amplifiers
@@ -79,7 +79,7 @@ const Project: React.FC = () => {
       category: 'Paging-Power-Amplifiers',
       title: 'Paging Power Amplifiers',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/Amplifiers.jpg',
     },
 
     //Specialize Speakers
@@ -87,13 +87,13 @@ const Project: React.FC = () => {
       category: 'Specialize-Speakers',
       title: 'Weatherproof Speakers',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/Weatherproof.jfif',
     },
     {
       category: 'Specialize-Speakers',
       title: 'Ceiling Speakers',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/Ceiling.jpg',
     },
 
     //Lighting-Systems
@@ -101,13 +101,13 @@ const Project: React.FC = () => {
       category: 'Lighting-Systems',
       title: 'Lights',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/Lighting.jpg',
     },
     {
       category: 'Lighting-Systems',
       title: 'Light Controllers',
       description: 'A landing page for Products',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/LightControllers.webp',
     },
 
     //Fog Machine
@@ -115,13 +115,13 @@ const Project: React.FC = () => {
       category: 'Fog-Machines',
       title: ' Fog Machine Simple Products',
       description: 'A Products description',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/Fog-Machines.webp',
     },
 
     //Professional-Sound-Systems
     {
       category: 'Professional-Sound-Systems',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/ProfessionalSpeakers.png',
       title: 'Amplifiers',
       description: 'A Products description',
     },
@@ -129,31 +129,31 @@ const Project: React.FC = () => {
       category: 'Professional-Sound-Systems',
       title: 'Wireless System',
       description: 'A Products description',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/wireless.webp',
     },
     {
       category: 'Professional-Sound-Systems',
       title: 'Wireless Podium / Lecturn',
       description: 'A Products description',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/WirelessLecturn.jpg',
     },
     {
       category: 'Professional-Sound-Systems',
       title: 'Portable P.A. System',
       description: 'A Products description',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/PortableSystem.jpg',
     },
     {
       category: 'Professional-Sound-Systems',
       title: 'Mixers',
       description: 'A Products description',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/mixers.jpeg',
     },
     {
       category: 'Professional-Sound-Systems',
       title: 'CD Player',
       description: 'A Products description',
-      image: '/images/projects/fogmachine.jpg',
+      image: '/images/projects/CdPlayer.jpg',
     },
   ];
   const [selectedCategory, setSelectedCategory] = useState<string>('');
