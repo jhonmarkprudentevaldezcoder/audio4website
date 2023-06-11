@@ -10,6 +10,7 @@ import randomString from 'utils/randomString';
 
 const Project: React.FC = () => {
   interface Project {
+    num: string;
     category: string;
     title: string;
     description: string;
@@ -18,13 +19,14 @@ const Project: React.FC = () => {
   const projectList: Project[] = [
     //Conference Systems
     {
+      num:'1',
       category: 'Conference-Systems',
       title: 'Conference Systems',
       description: 'A landing page for Products',
       image: '/images/projects/conference.jpg',
     },
     //Equipment Racks/Cases
-    {
+    { num:'2',
       category: 'Equipment-Racks-Cases',
       title: 'Equipment Racks/Cases',
       description: 'A landing page for Products',
@@ -32,6 +34,7 @@ const Project: React.FC = () => {
     },
     //Radio Systems
     {
+      num:'3',
       category: 'Radio-Systems',
       title: 'Radio Systems',
       description: 'A landing page for Products',
@@ -39,6 +42,7 @@ const Project: React.FC = () => {
     },
     //Video Projection system
     {
+      num:'4',
       category: 'Video-Projection-Systems',
       title: 'Video Projection system',
       description: 'A landing page for Products',
@@ -46,6 +50,7 @@ const Project: React.FC = () => {
     },
     //Telephone & PABX Systems
     {
+      num:'5',
       category: 'Telephone-PABX-Systems',
       title: 'Telephone & PABX Systems',
       description: 'A landing page for Products',
@@ -53,6 +58,7 @@ const Project: React.FC = () => {
     },
     //Surveillance Cameras
     {
+      num:'6',
       category: 'Surveillance-Cameras',
       title: 'Surveillance Cameras',
       description: 'A landing page for Products',
@@ -60,6 +66,7 @@ const Project: React.FC = () => {
     },
     //Speech Laboratory Systems
     {
+      num:'7',
       category: 'Speech-Laboratory',
       title: 'Speech Laboratory Systems',
       description: 'A landing page for Products',
@@ -68,6 +75,7 @@ const Project: React.FC = () => {
 
     //Intercom-Systems
     {
+      num:'8',
       category: 'Intercom-Systems',
       title: 'Intercom Systems',
       description: 'A landing page for Products',
@@ -75,7 +83,7 @@ const Project: React.FC = () => {
     },
 
     //Paging Power Amplifiers
-    {
+    { num:'9',
       category: 'Paging-Power-Amplifiers',
       title: 'Paging Power Amplifiers',
       description: 'A landing page for Products',
@@ -84,12 +92,14 @@ const Project: React.FC = () => {
 
     //Specialize Speakers
     {
+      num:'10',
       category: 'Specialize-Speakers',
       title: 'Weatherproof Speakers',
       description: 'A landing page for Products',
       image: '/images/projects/Weatherproof.jfif',
     },
     {
+      num:'11',
       category: 'Specialize-Speakers',
       title: 'Ceiling Speakers',
       description: 'A landing page for Products',
@@ -98,12 +108,14 @@ const Project: React.FC = () => {
 
     //Lighting-Systems
     {
+      num:'12',
       category: 'Lighting-Systems',
       title: 'Lights',
       description: 'A landing page for Products',
       image: '/images/projects/Lighting.jpg',
     },
     {
+      num:'13',
       category: 'Lighting-Systems',
       title: 'Light Controllers',
       description: 'A landing page for Products',
@@ -112,6 +124,7 @@ const Project: React.FC = () => {
 
     //Fog Machine
     {
+      num:'14',
       category: 'Fog-Machines',
       title: ' Fog Machine Simple Products',
       description: 'A Products description',
@@ -120,36 +133,42 @@ const Project: React.FC = () => {
 
     //Professional-Sound-Systems
     {
+      num:'15',
       category: 'Professional-Sound-Systems',
       image: '/images/projects/ProfessionalSpeakers.png',
       title: 'Amplifiers',
       description: 'A Products description',
     },
     {
+      num:'16',
       category: 'Professional-Sound-Systems',
       title: 'Wireless System',
       description: 'A Products description',
       image: '/images/projects/wireless.webp',
     },
     {
+      num:'17',
       category: 'Professional-Sound-Systems',
       title: 'Wireless Podium / Lecturn',
       description: 'A Products description',
       image: '/images/projects/WirelessLecturn.jpg',
     },
     {
+      num:'18',
       category: 'Professional-Sound-Systems',
       title: 'Portable P.A. System',
       description: 'A Products description',
       image: '/images/projects/PortableSystem.jpg',
     },
     {
+      num:'19',
       category: 'Professional-Sound-Systems',
       title: 'Mixers',
       description: 'A Products description',
       image: '/images/projects/mixers.jpeg',
     },
     {
+      num:'20',
       category: 'Professional-Sound-Systems',
       title: 'CD Player',
       description: 'A Products description',
@@ -243,6 +262,7 @@ const Project: React.FC = () => {
                 data-aos="zoom-in-up"
               >
                 <ProjectCard
+                  num={project.num}
                   title={project.title}
                   description={project.description}
                   image={project.image}

@@ -5,11 +5,13 @@ import Text from 'components/atoms/Text';
 import Image from 'next/image';
 
 interface ProjectCardProps extends LazyCardProps {
+  num: string;
   title: string;
   description: string;
   image: string;
 }
 const ProjectCard = ({
+  num,
   title,
   description,
   bottomSquareSize = 'small',
@@ -33,7 +35,7 @@ const ProjectCard = ({
             color="white"
             radius="pill"
             style="outline"
-            href="/project/detail"
+            href={`/project/detail/${num}`}
           />
         </div>
       </div>
