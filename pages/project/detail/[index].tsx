@@ -5,6 +5,7 @@ import PageSentence from "components/molecules/PageSentence";
 import PageTemplate from "components/templates/PageTemplate";
 import React from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const ProjectDetail = () => {
   const router = useRouter();
@@ -194,11 +195,13 @@ const ProjectDetail = () => {
       </section>
       <LineDivider />
       <section className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <aside data-aos="fade-up-right">
-          <LazyCard bottomSquareSize="big" height={400} />
-        </aside>
+       
         {filteredProducts.map((product) => (
-          /*       <li key={product.id}></li> */
+          <>
+           <aside data-aos="fade-up-right">
+        
+        <Image src={product.image} alt={product.title} width={300} height={300} />
+        </aside>
           <aside
             className="grid gap-12 place-content-center"
             data-aos="fade-up-left"
@@ -222,6 +225,7 @@ const ProjectDetail = () => {
               </div>
             </div>
           </aside>
+</>
         ))}
       </section>
       <LineDivider />
