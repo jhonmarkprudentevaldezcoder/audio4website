@@ -88,8 +88,8 @@ const ProjectDetail = () => {
     //Paging Power Amplifiers
     {
       id: "9",
-      category: "Paging-Power-Amplifiers",
-      title: "Paging Power Amplifiers",
+      category: "Paging-System-Amplifiers",
+      title: "Paging System Amplifiers",
       description: "A landing page for Products",
       image: "/images/projects/Amplifiers.jpg",
     },
