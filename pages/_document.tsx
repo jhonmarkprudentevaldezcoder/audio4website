@@ -12,7 +12,7 @@ const Document = () => {
         <meta name="robots" content="index, follow" />
         <meta
           name="tags"
-          content="web,app,ui,maintenance,company,AUDIO4,profile"
+          content="maintenance,company,AUDIO4,profile"
         />
         <link rel="shortcut icon" href="/images/4.png" type="image/x-icon" />
       </Head>
