@@ -93,14 +93,14 @@ const Project: React.FC = () => {
     //Specialize Speakers
     {
       num:'10',
-      category: 'Specialize-Speakers',
+      category: 'Specialized-Speakers',
       title: 'Weatherproof Speakers',
       description: 'A landing page for Products',
       image: '/images/projects/Weatherproof.jfif',
     },
     {
       num:'11',
-      category: 'Specialize-Speakers',
+      category: 'Specialized-Speakers',
       title: 'Ceiling Speakers',
       description: 'A landing page for Products',
       image: '/images/projects/Ceiling.jpg',
