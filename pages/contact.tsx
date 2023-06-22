@@ -77,9 +77,10 @@ const Contact: React.FC = () => {
               />
               <IconListItem
                 label="Email"
-                value="salesaudio4design.com"
+                value="bencuales@audio4design.com <br/> a4dnt@yahoo.com"
                 icon={<FiMail />}
               />
+
               <IconListItem
                 label="Address"
                 value="2nd Flr., Unit 209 Cityland Pasong Tamo,

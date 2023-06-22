@@ -253,7 +253,7 @@ const Project: React.FC = () => {
               { label: "Conference Room", value: "Conference-Systems" },
               { label: "Specialized Speakers", value: "Specialized-Speakers" },
               {
-                label: "Paging System Amplifiers",
+                label: "System Amplifiers",
                 value: "Paging-System-Amplifiers",
               },
               {
@@ -293,7 +293,7 @@ const Project: React.FC = () => {
                 value: "Radio-Systems",
               },
               {
-                label: "Equipment Racks/Cases",
+                label: "Equipment Racks",
                 value: "Equipment-Racks-Cases",
               },
 
