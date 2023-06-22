@@ -23,7 +23,7 @@ const ProjectDetail = () => {
     {
       id: "1",
       category: "Conference-Systems",
-      title: "Conference Systems",
+      title: "Conference Room",
       description: "A landing page for Products",
       image: "/images/projects/conference.jpg",
     },
@@ -89,7 +89,7 @@ const ProjectDetail = () => {
     {
       id: "9",
       category: "Paging-System-Amplifiers",
-      title: "Paging System Amplifiers",
+      title: "Paging System ",
       description: "A landing page for Products",
       image: "/images/projects/Amplifiers.jpg",
     },
@@ -98,7 +98,7 @@ const ProjectDetail = () => {
     {
       id: "10",
       category: "Specialized-Speakers",
-      title: "Weatherproof Speakers",
+      title: "WaterProof Speakers",
       description: "A landing page for Products",
       image: "/images/projects/Weatherproof.jfif",
     },
@@ -153,7 +153,7 @@ const ProjectDetail = () => {
     {
       id: "17",
       category: "Professional-Sound-Systems",
-      title: "Wireless Podium / Lecturn",
+      title: "Wireless Lectern",
       description: "A Products description",
       image: "/images/projects/WirelessLecturn.jpg",
     },
@@ -167,16 +167,18 @@ const ProjectDetail = () => {
     {
       id: "19",
       category: "Professional-Sound-Systems",
-      title: "Mixers",
+      title: "Audio Mixers",
       description: "A Products description",
       image: "/images/projects/mixers.jpeg",
     },
+
+    //new item
     {
       id: "20",
-      category: "Professional-Sound-Systems",
-      title: "CD Player",
-      description: "A Products description",
-      image: "/images/projects/CdPlayer.jpg",
+      category: "Specialized-Speakers",
+      title: "sample",
+      description: "A landing page for Products",
+      image: "/images/projects/Ceiling.jpg",
     },
   ];
 
@@ -195,37 +197,43 @@ const ProjectDetail = () => {
       </section>
       <LineDivider />
       <section className="grid grid-cols-1 gap-8 md:grid-cols-2">
-       
         {filteredProducts.map((product) => (
           <>
-           <aside data-aos="fade-up-right">
-        
-        <Image src={product.image} alt={product.title} width={300} height={300} />
-        </aside>
-          <aside
-            className="grid gap-12 place-content-center"
-            data-aos="fade-up-left"
-          >
-            <Text
-              textStyle="SectionParagraph"
-              value={`${product.description}`}
-            />
-            <div className="grid gap-6">
-              <div className="grid gap-2">
-                <Text value="CATEGORY" textStyle="ProjectDetailLabel" />
-                <Text value={`${product.category}`} textStyle="ProjectDetailValue" />
-              </div>
+            <aside data-aos="fade-up-right">
+              <Image
+                src={product.image}
+                alt={product.title}
+                width={300}
+                height={300}
+              />
+            </aside>
+            <aside
+              className="grid gap-12 place-content-center"
+              data-aos="fade-up-left"
+            >
+              <Text
+                textStyle="SectionParagraph"
+                value={`${product.description}`}
+              />
+              <div className="grid gap-6">
+                <div className="grid gap-2">
+                  <Text value="CATEGORY" textStyle="ProjectDetailLabel" />
+                  <Text
+                    value={`${product.category}`}
+                    textStyle="ProjectDetailValue"
+                  />
+                </div>
 
-              <div className="grid gap-2">
-                <Text value="PROJECT NAME" textStyle="ProjectDetailLabel" />
-                <Text
-                  value={`${product.title}`}
-                  textStyle="ProjectDetailValue"
-                />
+                <div className="grid gap-2">
+                  <Text value="PROJECT NAME" textStyle="ProjectDetailLabel" />
+                  <Text
+                    value={`${product.title}`}
+                    textStyle="ProjectDetailValue"
+                  />
+                </div>
               </div>
-            </div>
-          </aside>
-</>
+            </aside>
+          </>
         ))}
       </section>
       <LineDivider />

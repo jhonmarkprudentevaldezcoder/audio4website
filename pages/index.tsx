@@ -1,16 +1,16 @@
-import ButtonLink from 'components/atoms/Button/ButtonLink';
-import LineDivider from 'components/atoms/LineDivider';
-import FeatureCard from 'components/molecules/Card/FeatureCard';
-import PageSentence from 'components/molecules/PageSentence'; /* 
+import ButtonLink from "components/atoms/Button/ButtonLink";
+import LineDivider from "components/atoms/LineDivider";
+import FeatureCard from "components/molecules/Card/FeatureCard";
+import PageSentence from "components/molecules/PageSentence"; /* 
 import PricingCard from 'components/molecules/Card/PricingCard';
 import ProjectCard from 'components/molecules/Card/ProjectCard'; */
-import SectionSentence from 'components/molecules/SectionSentence';
-import LogoList from 'components/organisms/LogoList'; /* 
+import SectionSentence from "components/molecules/SectionSentence";
+import LogoList from "components/organisms/LogoList"; /* 
 import TestimonialList from 'components/organisms/TestimonialList'; */
-import PageTemplate from 'components/templates/PageTemplate';
-import Image from 'next/image';
-import React from 'react';
-import { FiFigma, FiCode, FiBox } from 'react-icons/fi';
+import PageTemplate from "components/templates/PageTemplate";
+import Image from "next/image";
+import React from "react";
+import { FiFigma, FiCode, FiBox } from "react-icons/fi";
 const Home = () => {
   return (
     <>
@@ -49,7 +49,7 @@ const Home = () => {
           </div>
           <div data-aos="fade-up">
             <FeatureCard
-              title="Develop"
+              title="Build"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               icon={<FiBox />}
             />
@@ -68,7 +68,7 @@ const Home = () => {
         <section className="grid grid-cols-1 gap-6 sm:gap-8 place-items-center lg:grid-cols-2">
           <aside className="w-full h-[400px] relative" data-aos="fade-right">
             <Image
-              src={'/images/how-we-work-illustration.svg'}
+              src={"/images/how-we-work-illustration.svg"}
               layout="fill"
               objectFit="fill"
               alt="Structured plan"
