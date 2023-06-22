@@ -345,7 +345,6 @@ const Project: React.FC = () => {
             );
           })}
         </div>
-        <Button value="Load More" color="white" style="light" />
       </section>
     </PageTemplate>
   );
