@@ -317,9 +317,17 @@ const Project: React.FC = () => {
           />
         </aside>
       </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <LineDivider />
       <section className="grid place-items-center gap-16">
-        <div className="w-full grid grid-cols-1 gap-y-16 mt-64 sm:grid-cols-2 sm:gap-x-5">
+        <div className="w-full grid grid-cols-1 gap-y-12 mt-64 sm:grid-cols-2 sm:gap-x-5">
           {filteredProducts.map((project) => {
             return (
               <div

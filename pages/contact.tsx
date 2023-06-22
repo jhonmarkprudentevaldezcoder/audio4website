@@ -1,12 +1,12 @@
-import Button from 'components/atoms/Button';
-import InputGroup from 'components/molecules/FormGroup/InputGroup';
-import TextAreaGroup from 'components/molecules/FormGroup/TextAreaGroup';
-import IconListItem from 'components/molecules/IconListItem';
-import PageSentence from 'components/molecules/PageSentence';
-import PageTemplate from 'components/templates/PageTemplate';
-import { FiMail, FiPhoneCall } from 'react-icons/fi';
-import { MdLocationCity } from 'react-icons/md';
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import Button from "components/atoms/Button";
+import InputGroup from "components/molecules/FormGroup/InputGroup";
+import TextAreaGroup from "components/molecules/FormGroup/TextAreaGroup";
+import IconListItem from "components/molecules/IconListItem";
+import PageSentence from "components/molecules/PageSentence";
+import PageTemplate from "components/templates/PageTemplate";
+import { FiMail, FiPhoneCall } from "react-icons/fi";
+import { MdLocationCity } from "react-icons/md";
+import React, { useState, ChangeEvent, FormEvent } from "react";
 
 interface EmailData {
   to: string;
@@ -16,34 +16,34 @@ interface EmailData {
 
 const Contact: React.FC = () => {
   const [emailData, setEmailData] = useState<EmailData>({
-    to: '',
-    subject: '',
-    text: '',
+    to: "",
+    subject: "",
+    text: "",
   });
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(emailData),
       });
 
       if (response.ok) {
-        console.log('Email sent successfully.');
+        console.log("Email sent successfully.");
         setEmailData({
-          to: '',
-          subject: '',
-          text: '',
+          to: "",
+          subject: "",
+          text: "",
         });
       } else {
-        console.log('Failed to send email.');
+        console.log("Failed to send email.");
       }
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error("Error sending email:", error);
     }
   };
 
@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
             <div className="space-y-6">
               <IconListItem
                 label="Phone"
-                value="812-2538 / 830-0760"
+                value="8812-2538 / 8830-0760"
                 icon={<FiPhoneCall />}
               />
               <IconListItem
