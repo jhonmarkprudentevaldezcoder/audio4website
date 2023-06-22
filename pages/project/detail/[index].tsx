@@ -176,9 +176,40 @@ const ProjectDetail = () => {
     {
       id: "20",
       category: "Specialized-Speakers",
-      title: "sample",
+      title: "Wall Speaker",
       description: "A landing page for Products",
-      image: "/images/projects/Ceiling.jpg",
+      image: "/images/projects/wall.jpg",
+    },
+
+    {
+      id: "21",
+      category: "Led-Wall",
+      title: "LED WALL",
+      description: "A landing page for Products",
+      image: "/images/projects/ledwall.jpg",
+    },
+    {
+      id: "22",
+      category: "Smart-Interactive-Tv",
+      title: "Smart Interactive Tv",
+      description: "A landing page for Products",
+      image: "/images/projects/smarttv.jpg",
+    },
+
+    {
+      id: "23",
+      category: "Fire-Alarm-System",
+      title: "Fire Alarm System",
+      description: "A landing page for Products",
+      image: "/images/projects/fire.jpeg",
+    },
+
+    {
+      id: "24",
+      category: "Window-Intercoms-System",
+      title: "Window Intercoms System",
+      description: "A landing page for Products",
+      image: "/images/projects/win2.jpg",
     },
   ];
 
