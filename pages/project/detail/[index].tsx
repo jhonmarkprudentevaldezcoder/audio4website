@@ -82,7 +82,7 @@ const ProjectDetail = () => {
       category: "Intercom-Systems",
       title: "Intercom Systems",
       description: "A landing page for Products",
-      image: "/images/projects/Intercom.jpg",
+      image: "/images/projects/wall.jpg",
     },
 
     //Paging Power Amplifiers

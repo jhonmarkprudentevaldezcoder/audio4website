@@ -114,7 +114,7 @@ const Project: React.FC = () => {
       category: "Lighting-Systems",
       title: "Lights",
       description: "A landing page for Products",
-      image: "/images/projects/Lighting.jpg",
+      image: "/images/projects/l.jfif",
     },
     {
       num: "13",
@@ -174,22 +174,22 @@ const Project: React.FC = () => {
       category: "Professional-Sound-Systems",
       title: "Microphone Mixers",
       description: "A landing page for Products",
-      image: "/images/projects/Ceiling.jpg",
+      image: "/images/projects/micro.jpg",
     },
     {
       num: "25",
       category: "Professional-Sound-Systems",
       title: "Wireless System",
       description: "A landing page for Products",
-      image: "/images/projects/Ceiling.jpg",
+      image: "/images/projects/wires.jpg",
     },
     //new item
     {
       num: "20",
       category: "Specialized-Speakers",
-      title: "sample",
+      title: "Wall Speaker",
       description: "A landing page for Products",
-      image: "/images/projects/Ceiling.jpg",
+      image: "/images/projects/wall.jpg",
     },
 
     {
@@ -197,14 +197,14 @@ const Project: React.FC = () => {
       category: "Led-Wall",
       title: "LED WALL",
       description: "A landing page for Products",
-      image: "/images/projects/Ceiling.jpg",
+      image: "/images/projects/ledwall.jpg",
     },
     {
       num: "22",
       category: "Smart-Interactive-Tv",
       title: "Smart Interactive Tv",
       description: "A landing page for Products",
-      image: "/images/projects/Ceiling.jpg",
+      image: "/images/projects/smarttv.jpg",
     },
 
     {
@@ -212,7 +212,7 @@ const Project: React.FC = () => {
       category: "Fire-Alarm-System",
       title: "Fire Alarm System",
       description: "A landing page for Products",
-      image: "/images/projects/Ceiling.jpg",
+      image: "/images/projects/fire.jpeg",
     },
 
     {
@@ -220,7 +220,7 @@ const Project: React.FC = () => {
       category: "Window-Intercoms-System",
       title: "Window Intercoms System",
       description: "A landing page for Products",
-      image: "/images/projects/Ceiling.jpg",
+      image: "/images/projects/win2.jpg",
     },
   ];
 
