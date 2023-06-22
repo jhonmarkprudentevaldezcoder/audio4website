@@ -82,10 +82,8 @@ const Contact: React.FC = () => {
               />
               <IconListItem
                 label="Address"
-                value="UG-15 Cityland Pasong Tamo,
-                #6264 Calle Estacion,
-                Brgy. Pio Del Pilar,
-                Makati City, Philippines"
+                value="U2nd Flr., Unit 209 Cityland Pasong Tamo,
+                #6264 Calle Estacion, Pio Del Pilar Makati City 1200"
                 icon={<MdLocationCity />}
               />
             </div>
