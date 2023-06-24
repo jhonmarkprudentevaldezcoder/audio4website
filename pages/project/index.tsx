@@ -31,7 +31,7 @@ const Project: React.FC = () => {
       category: "Equipment-Racks-Cases",
       title: "Equipment Racks/Cases",
       description: "A landing page for Products",
-      image: "/images/projects/Cases.jpeg",
+      image: "/images/projects/Q1.PNG",
     },
     //Radio Systems
     {
@@ -39,7 +39,7 @@ const Project: React.FC = () => {
       category: "Radio-Systems",
       title: "Radio Systems",
       description: "A landing page for Products",
-      image: "/images/projects/RadioSystem.jfif",
+      image: "/images/projects/RR.JPG",
     },
     //Video Projection system
     {
@@ -89,7 +89,7 @@ const Project: React.FC = () => {
       category: "Paging-System-Amplifiers",
       title: "Paging System ",
       description: "A landing page for Products",
-      image: "/images/projects/Amplifiers.jpg",
+      image: "/images/projects/TOA.jpg",
     },
 
     //Specialize Speakers
@@ -114,14 +114,14 @@ const Project: React.FC = () => {
       category: "Lighting-Systems",
       title: "Lights",
       description: "A landing page for Products",
-      image: "/images/projects/l.jfif",
+      image: "/images/projects/PAR1.JPG",
     },
     {
       num: "13",
       category: "Lighting-Systems",
       title: "Light Controllers",
       description: "A landing page for Products",
-      image: "/images/projects/LightControllers.webp",
+      image: "/images/projects/LG6.JPG",
     },
 
     //Fog Machine
@@ -130,14 +130,14 @@ const Project: React.FC = () => {
       category: "Fog-Machines",
       title: " Fog Machine Simple Products",
       description: "A Products description",
-      image: "/images/projects/Fog-Machines.webp",
+      image: "/images/projects/FOOG.JPG",
     },
 
     //Professional-Sound-Systems
     {
       num: "15",
       category: "Professional-Sound-Systems",
-      image: "/images/projects/ProfessionalSpeakers.png",
+      image: "/images/projects/AMP1.JPG",
       title: "Amplifiers",
       description: "A Products description",
     },
@@ -172,17 +172,11 @@ const Project: React.FC = () => {
     {
       num: "24",
       category: "Professional-Sound-Systems",
-      title: "Microphone Mixers",
+      title: "Micro Mixers",
       description: "A landing page for Products",
       image: "/images/projects/micro.jpg",
     },
-    {
-      num: "25",
-      category: "Professional-Sound-Systems",
-      title: "Wireless System",
-      description: "A landing page for Products",
-      image: "/images/projects/wires.jpg",
-    },
+  
     //new item
     {
       num: "20",
@@ -197,14 +191,14 @@ const Project: React.FC = () => {
       category: "Led-Wall",
       title: "LED WALL",
       description: "A landing page for Products",
-      image: "/images/projects/ledwall.jpg",
+      image: "/images/projects/LED1.PNG",
     },
     {
       num: "22",
       category: "Smart-Interactive-Tv",
       title: "Smart Interactive Tv",
       description: "A landing page for Products",
-      image: "/images/projects/smarttv.jpg",
+      image: "/images/projects/SM1.png",
     },
 
     {
@@ -215,13 +209,6 @@ const Project: React.FC = () => {
       image: "/images/projects/fire.jpeg",
     },
 
-    {
-      num: "24",
-      category: "Window-Intercoms-System",
-      title: "Window Intercoms System",
-      description: "A landing page for Products",
-      image: "/images/projects/win2.jpg",
-    },
   ];
 
   const [selectedCategory, setSelectedCategory] = useState<string>("");
