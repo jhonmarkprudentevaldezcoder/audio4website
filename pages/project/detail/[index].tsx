@@ -27,7 +27,7 @@ const ProjectDetail = () => {
       category: "Conference-Systems",
       title: "Conference Room",
       description: "A landing page for Products",
-      image: "/images/projects/conference.jpg",
+      image: "/images/projects/confii3.jpg",
       imageb: "/images/projects/confii 3.jpg",
       imagec: "/images/projects/confii 2.jpg",
     },
@@ -261,7 +261,7 @@ const ProjectDetail = () => {
       imageb: "/images/projects/IN2.png",
       imagec: "/images/projects/IN3.jpg",
     },
-    
+
     {
       id: "25",
       category: "Professional-Sound-Systems",
@@ -323,8 +323,6 @@ const ProjectDetail = () => {
                 value={`${product.description}`}
               />
               <div className="grid gap-6">
-              
-
                 <div className="grid gap-2">
                   <Text value="PROJECT NAME" textStyle="ProjectDetailLabel" />
                   <Text

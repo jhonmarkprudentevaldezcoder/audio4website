@@ -23,7 +23,7 @@ const Project: React.FC = () => {
       category: "Conference-Systems",
       title: "Conference Room",
       description: "A landing page for Products",
-      image: "/images/projects/conference.jpg",
+      image: "/images/projects/confii 3.jpg",
     },
     //Equipment Racks/Cases
     {
