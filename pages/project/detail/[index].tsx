@@ -28,8 +28,8 @@ const ProjectDetail = () => {
       title: "Conference Room",
       description: "A landing page for Products",
       image: "/images/projects/confii3.jpg",
-      imageb: "/images/projects/confii 3.jpg",
-      imagec: "/images/projects/confii 2.jpg",
+      imageb: "/images/projects/confii3.jpg",
+      imagec: "/images/projects/confii2.jpg",
     },
     //Equipment Racks/Cases
     {
