@@ -59,8 +59,8 @@ const Contact = () => {
             data-aos="fade-down-left"
           >
             <form onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 gap-7 p-6 md:p-9 bg-light rounded-md lg:w-10/12 ">
-                <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 p-6 md:p-9 bg-light rounded-md lg:w-20/12 ">
+                <div className="grid grid-cols-2 gap-2">
                   <label htmlFor="name" className="text-white">
                     NAME
                   </label>
