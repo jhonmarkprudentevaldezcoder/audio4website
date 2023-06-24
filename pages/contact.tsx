@@ -6,55 +6,13 @@ import PageSentence from "components/molecules/PageSentence";
 import PageTemplate from "components/templates/PageTemplate";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { MdLocationCity } from "react-icons/md";
-import React, { useState, ChangeEvent, FormEvent } from "react";
-
-interface EmailData {
-  to: string;
-  subject: string;
-  text: string;
-}
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact: React.FC = () => {
-  const [emailData, setEmailData] = useState<EmailData>({
-    to: "",
-    subject: "",
-    text: "",
-  });
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch("/api/sendEmail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(emailData),
-      });
-
-      if (response.ok) {
-        console.log("Email sent successfully.");
-        setEmailData({
-          to: "",
-          subject: "",
-          text: "",
-        });
-      } else {
-        console.log("Failed to send email.");
-      }
-    } catch (error) {
-      console.error("Error sending email:", error);
-    }
-  };
-
-  const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setEmailData({
-      ...emailData,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const [state, handleSubmit] = useForm("xjvdnnog");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
     <>
       <PageTemplate title="Contact - AUDIO 4">
@@ -89,19 +47,41 @@ const Contact: React.FC = () => {
               />
             </div>
           </aside>
+
           <aside
             className="w-full sm:w-10/12 md:w-8/12 lg:w-full lg:flex lg:justify-end"
             data-aos="fade-down-left"
           >
-            <div className="grid grid-cols-1 gap-7 p-6 md:p-9 bg-light rounded-md lg:w-10/12 ">
-              <div className="grid grid-cols-2 gap-4">
-                <InputGroup label="Name" />
-                <InputGroup label="Email" />
+            <form onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 gap-7 p-6 md:p-9 bg-light rounded-md lg:w-10/12 ">
+                <div className="grid grid-cols-2 gap-4">
+                  <label htmlFor="name">NAME</label>
+                  <input type="text" id="name" name="name" />
+
+                  <label htmlFor="email">EMAIL</label>
+                  <input id="email" name="email" type="email" />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
+                </div>
+                <textarea id="message" name="message" />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
+                {/*  <Button value="Send Message" /> */}
+                <button
+                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  type="submit"
+                  disabled={state.submitting}
+                >
+                  Submit
+                </button>
               </div>
-              <InputGroup label="Subject" />
-              <TextAreaGroup label="Message" />
-              <Button value="Send Message" />
-            </div>
+            </form>
           </aside>
         </section>
       </PageTemplate>
