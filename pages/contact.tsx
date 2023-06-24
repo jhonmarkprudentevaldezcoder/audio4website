@@ -7,19 +7,21 @@ import { useForm, ValidationError } from "@formspree/react";
 import "react-toastify/dist/ReactToastify.css";
 import { showToast } from "components/molecules/Toast";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import InputGroup from "components/molecules/FormGroup/InputGroup";
+import TextArea from "components/atoms/Form/Textarea";
+import Button from "components/atoms/Button";
 
 const Contact = () => {
   const router = useRouter();
-
-  const [state, handleSubmit, reset] = useForm("xjvdnnog");
+  const [state, handleSubmit] = useForm("xjvdnnog");
 
   useEffect(() => {
     if (state.succeeded) {
-      showToast("message sent!");
       router.replace(router.asPath);
+      return showToast("message sent!");
     }
-  }, [state.succeeded, reset]);
+  }, [state.succeeded]);
   return (
     <>
       <PageTemplate title="Contact - AUDIO 4">
@@ -61,52 +63,43 @@ const Contact = () => {
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-4 p-6 md:p-9 bg-light rounded-md lg:w-20/12 ">
                 <div className="grid grid-cols-2 gap-2">
-                  <label htmlFor="name" className="text-white">
-                    NAME
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
+                  <InputGroup
+                    label="Name"
                     name="name"
-                    className=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    id="name"
+                    required
+                    placeholder="NAME"
                   />
 
-                  <label htmlFor="email" className="text-white text-sm">
-                    EMAIL
-                  </label>
-                  <input
-                    id="email"
+                  <InputGroup
+                    label="Email"
                     name="email"
-                    type="email"
-                    className=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    id="email"
+                    required
+                    placeholder="EMAIL"
                   />
+
                   <ValidationError
                     prefix="Email"
                     field="email"
                     errors={state.errors}
                   />
                 </div>
-                <label htmlFor="message" className="text-white text-sm">
-                  MESSAGE
-                </label>
-                <textarea
+                <TextArea
                   id="message"
+                  rows={10}
                   name="message"
-                  className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="message"
+                  required
                 />
+
                 <ValidationError
                   prefix="Message"
                   field="message"
                   errors={state.errors}
                 />
 
-                <button
-                  className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-                  type="submit"
-                  disabled={state.submitting}
-                >
-                  Submit
-                </button>
+                <Button value="send message" />
               </div>
             </form>
           </aside>

@@ -1,21 +1,23 @@
-import React from 'react'
+import React from "react";
 interface TextAreaProps {
-  defaultValue?: string | number
-  onChange?: React.ChangeEventHandler<HTMLTextAreaElement>
-  onSubmit?: React.FormEventHandler<HTMLTextAreaElement>
-  required?: boolean
-  rows?: number
-  id?:string
-  placeholder?:string
+  defaultValue?: string | number;
+  onChange?: React.ChangeEventHandler<HTMLTextAreaElement>;
+  onSubmit?: React.FormEventHandler<HTMLTextAreaElement>;
+  required?: boolean;
+  rows?: number;
+  id?: string;
+  name?: string;
+  placeholder?: string;
 }
 const TextArea = ({
-  defaultValue = '',
+  defaultValue = "",
   onChange = () => {},
   onSubmit = () => {},
   required = false,
   rows = 4,
   id,
-  placeholder
+  name,
+  placeholder,
 }: TextAreaProps) => {
   return (
     <>
@@ -27,11 +29,12 @@ const TextArea = ({
         required={required}
         rows={rows}
         id={id}
+        name={name}
         placeholder={placeholder}
       ></textarea>
     </>
-  )
-}
+  );
+};
 
-export default TextArea
-export type {TextAreaProps}
+export default TextArea;
+export type { TextAreaProps };

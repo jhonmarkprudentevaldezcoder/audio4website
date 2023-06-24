@@ -1,8 +1,8 @@
-import Button from 'components/atoms/Button';
-import ButtonLink from 'components/atoms/Button/ButtonLink';
-import LazyCard, { LazyCardProps } from 'components/atoms/LazyCard';
-import Text from 'components/atoms/Text';
-import Image from 'next/image';
+import Button from "components/atoms/Button";
+import ButtonLink from "components/atoms/Button/ButtonLink";
+import LazyCard, { LazyCardProps } from "components/atoms/LazyCard";
+import Text from "components/atoms/Text";
+import Image from "next/image";
 
 interface ProjectCardProps extends LazyCardProps {
   num: string;
@@ -14,7 +14,7 @@ const ProjectCard = ({
   num,
   title,
   description,
-  bottomSquareSize = 'small',
+  bottomSquareSize = "small",
   height = 450,
   image,
 }: ProjectCardProps) => {

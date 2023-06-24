@@ -8,6 +8,8 @@
     font-family: 'Noto Sans', sans-serif;
   }
 
+
+  
   span {
     @apply block !important;
   }

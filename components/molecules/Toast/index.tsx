@@ -3,7 +3,9 @@ import "react-toastify/dist/ReactToastify.css";
 
 export const Toast = () => {
   return (
-    <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
+    <div className="toast">
+      <ToastContainer position="top-center" autoClose={2000} />
+    </div>
   );
 };
 
