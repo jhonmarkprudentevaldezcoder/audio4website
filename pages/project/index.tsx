@@ -171,12 +171,12 @@ const Project: React.FC = () => {
     },
     {
       num: "24",
-      category: "Professional-Sound-Systems",
-      title: "Micro Mixers",
+      category: "Window-Intercoms-System",
+      title: "Window Intercoms",
       description: "A landing page for Products",
       image: "/images/projects/micro.jpg",
     },
-  
+
     //new item
     {
       num: "20",
@@ -208,7 +208,6 @@ const Project: React.FC = () => {
       description: "A landing page for Products",
       image: "/images/projects/fire.jpeg",
     },
-
   ];
 
   const [selectedCategory, setSelectedCategory] = useState<string>("");
