@@ -28,8 +28,8 @@ const ProjectDetail = () => {
       title: "Conference Room",
       description: "A landing page for Products",
       image: "/images/projects/comfii.jpg",
-      imageb: "/images/projects/confii 3.jpg",
-      imagec: "/images/projects/confii 2.jpg",
+      imageb: "/images/projects/confii3.jpg",
+      imagec: "/images/projects/confii2.jpg",
     },
     //Equipment Racks/Cases
     {
@@ -37,9 +37,9 @@ const ProjectDetail = () => {
       category: "Equipment-Racks-Cases",
       title: "Equipment Racks/Cases",
       description: "A landing page for Products",
-      image: "/images/projects/ERS 3.jpg",
-      imageb: "/images/projects/ERS 4.jpg",
-      imagec: "/images/projects/ERS 2.jpg",
+      image: "/images/projects/ERS3.jpg",
+      imageb: "/images/projects/ERS4.jpg",
+      imagec: "/images/projects/ERS2.jpg",
     },
     //Radio Systems
     {
@@ -109,9 +109,9 @@ const ProjectDetail = () => {
       category: "Paging-System-Amplifiers",
       title: "Paging System ",
       description: "A landing page for Products",
-      image: "/images/projects/TOA 1.jpg",
-      imageb: "/images/projects/TOA 2.jpg",
-      imagec: "/images/projects/TOA 3.jpg",
+      image: "/images/projects/TOA1.jpg",
+      imageb: "/images/projects/TOA2.jpg",
+      imagec: "/images/projects/TOA3.jpg",
     },
 
     //Specialize Speakers
@@ -140,7 +140,7 @@ const ProjectDetail = () => {
       category: "Lighting-Systems",
       title: "Lights",
       description: "A landing page for Products",
-      image: "/images/projects/PAR 2.jpg",
+      image: "/images/projects/PAR2.jpg",
       imageb: "/images/projects/PAR3.jpg",
       imagec: "/images/projects/PAR4.jpg",
     },
