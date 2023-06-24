@@ -1,18 +1,25 @@
-import Button from "components/atoms/Button";
-import InputGroup from "components/molecules/FormGroup/InputGroup";
-import TextAreaGroup from "components/molecules/FormGroup/TextAreaGroup";
 import IconListItem from "components/molecules/IconListItem";
 import PageSentence from "components/molecules/PageSentence";
 import PageTemplate from "components/templates/PageTemplate";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { MdLocationCity } from "react-icons/md";
 import { useForm, ValidationError } from "@formspree/react";
+import "react-toastify/dist/ReactToastify.css";
+import { showToast } from "components/molecules/Toast";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
-const Contact: React.FC = () => {
-  const [state, handleSubmit] = useForm("xjvdnnog");
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
+const Contact = () => {
+  const router = useRouter();
+
+  const [state, handleSubmit, reset] = useForm("xjvdnnog");
+
+  useEffect(() => {
+    if (state.succeeded) {
+      showToast("message sent!");
+      router.replace(router.asPath);
+    }
+  }, [state.succeeded, reset]);
   return (
     <>
       <PageTemplate title="Contact - AUDIO 4">
@@ -47,7 +54,6 @@ const Contact: React.FC = () => {
               />
             </div>
           </aside>
-
           <aside
             className="w-full sm:w-10/12 md:w-8/12 lg:w-full lg:flex lg:justify-end"
             data-aos="fade-down-left"
@@ -55,26 +61,47 @@ const Contact: React.FC = () => {
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-7 p-6 md:p-9 bg-light rounded-md lg:w-10/12 ">
                 <div className="grid grid-cols-2 gap-4">
-                  <label htmlFor="name">NAME</label>
-                  <input type="text" id="name" name="name" />
+                  <label htmlFor="name" className="text-white">
+                    NAME
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  />
 
-                  <label htmlFor="email">EMAIL</label>
-                  <input id="email" name="email" type="email" />
+                  <label htmlFor="email" className="text-white text-sm">
+                    EMAIL
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    className=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  />
                   <ValidationError
                     prefix="Email"
                     field="email"
                     errors={state.errors}
                   />
                 </div>
-                <textarea id="message" name="message" />
+                <label htmlFor="message" className="text-white text-sm">
+                  MESSAGE
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                />
                 <ValidationError
                   prefix="Message"
                   field="message"
                   errors={state.errors}
                 />
-                {/*  <Button value="Send Message" /> */}
+
                 <button
-                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                  className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
                   type="submit"
                   disabled={state.submitting}
                 >
