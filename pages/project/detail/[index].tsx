@@ -254,14 +254,23 @@ const ProjectDetail = () => {
 
     {
       id: "24",
-      category: "Professional-Sound-Systems",
-      title: "Micro Mixers",
+      category: "Window-Intercoms-System",
+      title: "Window Intercom System",
       description: "A landing page for Products",
+      image: "/images/projects/IN1.jpg",
+      imageb: "/images/projects/IN2.png",
+      imagec: "/images/projects/IN3.jpg",
+    },
+    
+    {
+      id: "25",
+      category: "Professional-Sound-Systems",
+      title: "Micro Mixer",
+      description: "A Products description",
       image: "/images/projects/MC1.jpg",
       imageb: "/images/projects/MC2.jpg",
       imagec: "/images/projects/MC3.jpg",
     },
-    
   ];
 
   const filteredProducts = projectList.filter(

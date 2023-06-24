@@ -169,13 +169,7 @@ const Project: React.FC = () => {
       description: "A Products description",
       image: "/images/projects/mixers.jpeg",
     },
-    {
-      num: "24",
-      category: "Window-Intercoms-System",
-      title: "Window Intercoms",
-      description: "A landing page for Products",
-      image: "/images/projects/micro.jpg",
-    },
+    
 
     //new item
     {
@@ -207,6 +201,23 @@ const Project: React.FC = () => {
       title: "Fire Alarm System",
       description: "A landing page for Products",
       image: "/images/projects/fire.jpeg",
+    },
+    {
+      num: "24",
+      category: "Window-Intercoms-System",
+      title: "Window Intercoms",
+      description: "A landing page for Products",
+      image: "/images/projects/IN1.jpg",
+    },
+
+    {
+      num: "25",
+      category: "Professional-Sound-Systems",
+      title: "Micro Mixer",
+      description: "A Products description",
+      image: "/images/projects/MC1.jpg",
+      imageb: "/images/projects/MC2.jpg",
+      imagec: "/images/projects/MC3.jpg",
     },
   ];
 
