@@ -27,7 +27,7 @@ const ProjectDetail = () => {
       category: "Conference-Systems",
       title: "Conference Room",
       description: "A landing page for Products",
-      image: "/images/projects/conference.jpg",
+      image: "/images/projects/comfii.jpg",
       imageb: "/images/projects/confii 3.jpg",
       imagec: "/images/projects/confii 2.jpg",
     },
