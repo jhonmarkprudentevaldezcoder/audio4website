@@ -169,7 +169,6 @@ const Project: React.FC = () => {
       description: "A Products description",
       image: "/images/projects/mixers.jpeg",
     },
-    
 
     //new item
     {
