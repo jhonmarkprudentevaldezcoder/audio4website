@@ -169,7 +169,6 @@ const Project: React.FC = () => {
       description: "A Products description",
       image: "/images/projects/mixers.jpeg",
     },
-    
 
     //new item
     {
@@ -216,8 +215,6 @@ const Project: React.FC = () => {
       title: "Micro Mixer",
       description: "A Products description",
       image: "/images/projects/MC1.jpg",
-      imageb: "/images/projects/MC2.jpg",
-      imagec: "/images/projects/MC3.jpg",
     },
   ];
 
